@@ -91,3 +91,13 @@ td {
 tr:hover {
     background: #f0f0f0;
 }
+
+@media screen and (max-width: 512px) {
+
+    header,
+    main,
+    nav,
+    footer {
+        width: 90%;
+    }
+}
