@@ -24,7 +24,19 @@ tr {
     font-family: "Verdana";
 }
 
+header {
+    display: flex;
+    align-items: center;
+}
+
+#cat {
+    flex: 1;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
 header h1 {
+
     font-size: 1.2em;
 }
 
@@ -57,8 +69,6 @@ header {
     margin-top: 2em;
 }
 
-nav {}
-
 nav ul {
     padding: 0;
 }
@@ -72,6 +82,10 @@ nav li {
 li {
     list-style-type: square;
     padding-left: 8px;
+}
+
+header {
+    position: relative;
 }
 
 footer {
@@ -93,6 +107,44 @@ tr:hover {
 }
 
 @media screen and (max-width: 512px) {
+    header {
+        display: block;
+    }
+
+    header,
+    main,
+    nav,
+    footer {
+        width: 90%;
+    }
+}
+
+@keyframes splash {
+    from {
+
+        transform: scale(1) rotate(15deg);
+    }
+
+    to {
+
+        transform: scale(1.2) rotate(15deg);
+
+    }
+}
+
+#splash {
+    text-align: center;
+    animation: 1s splash 0s infinite alternate;
+}
+
+@media screen and (max-width: 512px) {
+    #splash {
+        display: none;
+    }
+
+    header {
+        display: flex;
+    }
 
     header,
     main,
