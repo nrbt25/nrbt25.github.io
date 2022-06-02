@@ -24,11 +24,6 @@ tr {
     font-family: "Verdana";
 }
 
-header {
-    display: flex;
-    align-items: center;
-}
-
 #cat {
     flex: 1;
     text-decoration: none;
@@ -65,10 +60,6 @@ footer {
     margin: 0 auto;
 }
 
-header {
-    margin-top: 2em;
-}
-
 nav ul {
     padding: 0;
 }
@@ -85,7 +76,10 @@ li {
 }
 
 header {
+    margin-top: 2em;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 footer {
@@ -104,19 +98,6 @@ td {
 
 tr:hover {
     background: #f0f0f0;
-}
-
-@media screen and (max-width: 512px) {
-    header {
-        display: block;
-    }
-
-    header,
-    main,
-    nav,
-    footer {
-        width: 90%;
-    }
 }
 
 @keyframes splash {
